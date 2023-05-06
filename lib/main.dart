@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'utils/colors.dart'
+import 'package:instagram_clone_flutter/utils/colors.dart';
 
 void main() {
   runApp(const MyApp());
