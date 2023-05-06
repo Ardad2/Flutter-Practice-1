@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_flutter/utils/dimensions.dart';
 
 class ResponsiveLayout extends StatelessWidget {
+
+    final Widget webScreenLayout;   
+    final Widget mobileScreenLayout;
+
     const ResponsiveLayout({Key? key}): super(key : key));
 
     @override
@@ -9,6 +14,15 @@ class ResponsiveLayout extends StatelessWidget {
         return LayoutBuilder(
             builder: (context, constraints)
             {
+                if (constraints.maxWidth > webScreenSize)
+                {
+
+                    //web screen
+
+                }
+
+                //mobile screen
+
 
             },
         );
