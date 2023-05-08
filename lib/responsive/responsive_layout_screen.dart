@@ -6,7 +6,10 @@ class ResponsiveLayout extends StatelessWidget {
     final Widget webScreenLayout;   
     final Widget mobileScreenLayout;
 
-    const ResponsiveLayout({Key? key}): super(key : key));
+    const ResponsiveLayout({Key? key, 
+    required this.webScreenLayout, 
+    required this.mobileScreenLayout,
+    }): super(key : key));
 
     @override
     Widget build(BuildContext context)
@@ -17,11 +20,15 @@ class ResponsiveLayout extends StatelessWidget {
                 if (constraints.maxWidth > webScreenSize)
                 {
 
-                    //web screen
+                    //Web Screen
+
+                    return webScreenLayout;
 
                 }
 
                 //mobile screen
+
+                return mobileScreenLayout;
 
 
             },
